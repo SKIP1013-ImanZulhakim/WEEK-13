@@ -1,0 +1,32 @@
+package selfProgramming;
+
+import java.util.Scanner;
+
+public class SearchEditScanner {
+
+	public static void main(String[] args) {
+		int[] item = {10,20,30,40,50,60,70,80,90,100};
+		editValueScanner(item,100);
+		printArray(item);
+	}
+	
+	static void editValueScanner(int[] a, int searchValue) {
+		Scanner inp = new Scanner(System.in);
+		boolean edit=false;   
+		for (int i=0; i < a.length; i++) 
+		     if(a[i] == searchValue){ 
+		    	 System.out.println("Enter your new value:");
+		    	 a[i]=inp.nextInt();        
+		    	 edit=true;        
+		    	 break;
+		     }
+		if (edit==false) 
+		System.out.println("The search value is not in the list.");
+	}
+	
+	static void printArray(int[] number)
+	{
+	   for (int index = 0; index < number.length; index++)
+		System.out.println(number[index] + "");
+	}
+}
