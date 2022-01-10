@@ -1,0 +1,15 @@
+Value before
+10
+20
+30
+40
+50
+
+Enter the number that you want to remove:
+10
+
+Value after
+20
+30
+40
+50
