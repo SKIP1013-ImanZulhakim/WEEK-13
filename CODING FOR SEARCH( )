@@ -1,0 +1,21 @@
+package selfProgramming;
+
+public class Exercise2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int [] num= {1,2,3,4,5};
+		int x=3;
+		int loc = search(num,x);
+		System.out.println("The location of "+x+" is at num["+ loc+"]");
+	}
+	
+	static int search (int[ ] num, int searchValue){
+		   int location=0;
+		   for (int i=0; i <num.length; i++) 
+		      if(num[i] == searchValue)
+		         location = i;
+		   return location;
+		}
+
+}
